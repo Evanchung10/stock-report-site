@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2330 台積電分析</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #17202a;
+      background: #f7f8fa;
+    }
+    main {
+      width: min(1080px, 100%);
+      margin: 0 auto;
+      padding: 32px 20px 56px;
+    }
+    header { margin-bottom: 22px; }
+    h1 { margin: 0 0 8px; font-size: 32px; line-height: 1.25; letter-spacing: 0; }
+    h2 { margin: 30px 0 12px; font-size: 22px; line-height: 1.35; }
+    p, li { line-height: 1.65; }
+    a { color: #175cd3; }
+    .muted { color: #667085; }
+    .tag {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: #e8f2ff;
+      color: #175cd3;
+      font-size: 13px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin: 18px 0;
+    }
+    .metric, section {
+      background: #fff;
+      border: 1px solid #e4e7ec;
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .metric strong {
+      display: block;
+      margin-top: 6px;
+      font-size: 24px;
+      line-height: 1.25;
+      overflow-wrap: anywhere;
+    }
+    .warn { background: #fff7ed; border-color: #fed7aa; }
+    .good { background: #f0fdf4; border-color: #bbf7d0; }
+    .table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border-radius: 8px;
+    }
+    table {
+      width: 100%;
+      min-width: 660px;
+      border-collapse: collapse;
+      background: #fff;
+      border: 1px solid #e4e7ec;
+    }
+    th, td {
+      padding: 11px 12px;
+      border-bottom: 1px solid #e4e7ec;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #f2f4f7; font-weight: 650; }
+    tr:last-child td { border-bottom: 0; }
+    .source-list { overflow-wrap: anywhere; }
+    @media (max-width: 820px) {
+      .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 560px) {
+      main { padding: 20px 12px 40px; }
+      h1 { font-size: 26px; }
+      h2 { font-size: 20px; margin-top: 24px; }
+      p, li, th, td { font-size: 16px; }
+      .grid { grid-template-columns: 1fr; gap: 10px; }
+      .metric, section { padding: 14px; }
+      .metric strong { font-size: 22px; }
+      table { min-width: 620px; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <span class="tag">個股分析</span>
+    <h1>2330 台積電</h1>
+    <p class="muted">分析日期：2026-05-18。重點放在 AI/HPC 需求、先進製程與先進封裝、毛利率、估值與進場風險。</p>
+  </header>
+
+  <div class="grid">
+    <div class="metric"><span>近期股價</span><strong>約 2,250</strong><span class="muted">近期行情資料</span></div>
+    <div class="metric"><span>Q1 營收</span><strong>US$35.9B</strong><span class="muted">優於財測</span></div>
+    <div class="metric"><span>Q1 毛利率</span><strong>66.2%</strong><span class="muted">高於財測上緣</span></div>
+    <div class="metric"><span>Q2 財測</span><strong>US$39.0-40.2B</strong><span class="muted">QoQ 再成長</span></div>
+  </div>
+
+  <section class="good">
+    <h2>結論</h2>
+    <p>台積電仍是台股 AI 主軸中最核心的公司。2026 Q1 營收 359 億美元、毛利率 66.2%、營益率 58.1%，Q2 財測營收進一步上看 390-402 億美元，顯示 AI/HPC、先進製程與先進封裝需求仍強。</p>
+    <p>但股價已充分反映「全球 AI 晶圓代工龍頭」的溢價。若以近期股價約 2,250 元、外部資料顯示本益比約 34 倍附近來看，台積電不是便宜股，而是高品質高估值股。長線可作為核心持股，短線新進場宜分批，避免在 AI 題材過熱時一次買滿。</p>
+  </section>
+
+  <h2>最新財報與財測</h2>
+  <div class="table-wrap">
+    <table>
+      <tr><th>項目</th><th>數字</th><th>判讀</th></tr>
+      <tr><td>2026 Q1 營收</td><td>US$35.9B</td><td>季增 6.4%，略高於公司原先財測。</td></tr>
+      <tr><td>2026 Q1 毛利率</td><td>66.2%</td><td>高於財測上緣，反映先進製程供需緊、成本與產能利用率佳。</td></tr>
+      <tr><td>2026 Q1 營益率</td><td>58.1%</td><td>營運槓桿非常強，仍維持全球晶圓代工最高品質。</td></tr>
+      <tr><td>2026 Q2 營收財測</td><td>US$39.0-40.2B</td><td>較 Q1 再上台階，AI/HPC 需求延續。</td></tr>
+      <tr><td>2026 Q2 毛利率財測</td><td>65.5%-67.5%</td><td>毛利率高檔續航，市場會高度關注是否能守住。</td></tr>
+    </table>
+  </div>
+
+  <h2>月營收動能</h2>
+  <p>台積電 2026 年 4 月營收約 4,107.25 億元，月減 1.1%、年增 17.5%；前 4 月累計營收約 1.54 兆元，年增約 30%。單月雖低於 3 月歷史高點，但仍是歷史高水準，且符合 Q2 財測需要的強勁營收節奏。</p>
+
+  <h2>成長來源</h2>
+  <ul>
+    <li>AI/HPC 是核心：Q1 HPC 佔營收約 61%，已成為台積電最重要的平台。</li>
+    <li>先進製程集中：3nm、5nm、7nm 等先進製程合計佔比高，AI 加速器、ASIC、CPU/GPU 都依賴台積電製造能力。</li>
+    <li>先進封裝與產能稀缺：CoWoS/先進封裝與領先製程滿載，是台積電毛利率與議價能力的重要來源。</li>
+    <li>客戶黏著度高：NVIDIA、Apple、AMD、Broadcom、各大雲端 ASIC 客戶都高度依賴台積電的製程節點與量產能力。</li>
+  </ul>
+
+  <h2>估值與股價位置</h2>
+  <div class="table-wrap">
+    <table>
+      <tr><th>項目</th><th>觀察</th><th>解讀</th></tr>
+      <tr><td>近期股價</td><td>約 2,250 元附近</td><td>已處於高價區，市場對 AI 成長有高度期待。</td></tr>
+      <tr><td>本益比</td><td>外部資料近期約 34 倍附近</td><td>相對台股很高，但台積電獲利品質與壟斷性也高。</td></tr>
+      <tr><td>4 月營收</td><td>4,107 億元，年增 17.5%</td><td>仍維持歷史高檔，但年增率低於 Q1 累計增速。</td></tr>
+      <tr><td>Q2 財測</td><td>美元營收 390-402 億美元</td><td>若達標，全年超過 30% 成長的信心會更高。</td></tr>
+    </table>
+  </div>
+
+  <section class="warn">
+    <h2>主要風險</h2>
+    <ul>
+      <li>AI 需求預期過熱：如果雲端資本支出放緩或 ASIC/GPU 需求遞延，估值會先修正。</li>
+      <li>高估值壓力：高品質不等於任何價格都便宜，本益比在高檔時對利率與市場情緒更敏感。</li>
+      <li>匯率風險：新台幣升值會壓低台幣營收與毛利率，公司也在法說中提醒匯率影響。</li>
+      <li>海外設廠成本：美國、日本、德國等海外產能有戰略價值，但成本與執行難度高。</li>
+      <li>地緣政治：台海、美中科技限制與出口管制都是長期估值折價來源。</li>
+    </ul>
+  </section>
+
+  <h2>操作觀點</h2>
+  <p>台積電適合當長線核心持股，而不是短線題材股。若已持有，重點是續看 Q2 財測達成率、毛利率是否維持 65% 以上、AI/HPC 需求是否持續擴張，以及先進封裝產能開出速度。</p>
+  <p>若要新進，建議分批。台積電的公司品質很高，但近期價格已反映大量樂觀預期；較好的買點通常來自市場對 AI 題材降溫、匯率壓力、或大盤修正造成的估值回落，而不是在財報利多後追價。</p>
+
+  <h2>資料來源</h2>
+  <p class="source-list">
+    <a href="https://investor.tsmc.com/english/quarterly-results/2026/q1">台積電 2026 Q1 官方財報與財測</a>、
+    <a href="https://technews.tw/2026/05/08/tsmc-2330-202604-financial-report/">TechNews 4 月營收</a>、
+    <a href="https://money.udn.com/money/amp/story/5607/9490510">經濟日報 4 月營收與 Q2 展望</a>、
+    <a href="https://tw.stock.yahoo.com/quote/2330.TW">Yahoo 股市 2330 行情</a>。
+  </p>
+</main>
+</body>
+</html>
