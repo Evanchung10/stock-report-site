@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>00981A ETF 分析</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #17202a;
+      background: #f7f8fa;
+    }
+    main {
+      width: min(1080px, 100%);
+      margin: 0 auto;
+      padding: 32px 20px 56px;
+    }
+    header { margin-bottom: 22px; }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 32px;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+    h2 { margin: 30px 0 12px; font-size: 22px; line-height: 1.35; }
+    h3 { margin: 20px 0 8px; font-size: 17px; }
+    p, li { line-height: 1.65; }
+    a { color: #175cd3; }
+    .muted { color: #667085; }
+    .tag {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: #e8f2ff;
+      color: #175cd3;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin: 18px 0;
+    }
+    .metric, section {
+      background: #fff;
+      border: 1px solid #e4e7ec;
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .metric strong {
+      display: block;
+      margin-top: 6px;
+      font-size: 24px;
+      line-height: 1.25;
+      overflow-wrap: anywhere;
+    }
+    .warn { background: #fff7ed; border-color: #fed7aa; }
+    .good { background: #f0fdf4; border-color: #bbf7d0; }
+    .table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border-radius: 8px;
+    }
+    table {
+      width: 100%;
+      min-width: 640px;
+      border-collapse: collapse;
+      background: #fff;
+      border: 1px solid #e4e7ec;
+    }
+    th, td {
+      padding: 11px 12px;
+      border-bottom: 1px solid #e4e7ec;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #f2f4f7; font-weight: 650; }
+    tr:last-child td { border-bottom: 0; }
+    .source-list { overflow-wrap: anywhere; }
+    @media (max-width: 820px) {
+      .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 560px) {
+      main { padding: 20px 12px 40px; }
+      h1 { font-size: 26px; }
+      h2 { font-size: 20px; margin-top: 24px; }
+      p, li, th, td { font-size: 16px; }
+      .grid { grid-template-columns: 1fr; gap: 10px; }
+      .metric, section { padding: 14px; }
+      .metric strong { font-size: 22px; }
+      table { min-width: 600px; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <span class="tag">ETF 專用分析</span>
+    <h1>00981A 主動統一台股增長</h1>
+    <p class="muted">分析日期：2026-05-18。這份報告以 ETF 組合基本面、費用、折溢價、流動性與主動管理風險為主，不使用個股 EPS 或營收邏輯。</p>
+  </header>
+
+  <div class="grid">
+    <div class="metric"><span>市價 / 淨值</span><strong>28.24 / 28.18</strong><span class="muted">2026-05-18 StockQ</span></div>
+    <div class="metric"><span>折溢價</span><strong>+0.21%</strong><span class="muted">市價略高於淨值</span></div>
+    <div class="metric"><span>1月 / 3月 / 今年</span><strong>+12.51% / +49.58% / +67.00%</strong><span class="muted">2026-05-18 報酬率</span></div>
+    <div class="metric"><span>前十大集中度</span><strong>約 60.9%</strong><span class="muted">2026-05-15 持股快照</span></div>
+  </div>
+
+  <section class="warn">
+    <h2>結論</h2>
+    <p>00981A 是偏高波動、高集中度的台股主動式 ETF，主要押注台積電與 AI 伺服器供應鏈，包括高階 PCB/CCL、網通、散熱、IC 設計、測試與伺服器零組件。它適合想要比 0050 更積極、更偏科技成長的人，但不適合作為保守型核心資產。</p>
+    <p>目前的主要問題是漲幅已大。2026 年以來報酬約 67.0%，近三個月約 49.6%，且自今年高點回落約 5.8%。這代表它仍在強勢區，但追高風險也高；若要配置，分批或定期定額比一次重壓合理。</p>
+  </section>
+
+  <h2>ETF 類型與策略</h2>
+  <div class="table-wrap">
+    <table>
+      <tr><th>項目</th><th>判讀</th></tr>
+      <tr><td>類型</td><td>國內股票型主動式 ETF。</td></tr>
+      <tr><td>核心定位</td><td>主動選股，不是被動複製 0050；經理人可依研究與市場變化調整持股。</td></tr>
+      <tr><td>報酬來源</td><td>以資本利得為主，配息不是主要訴求。</td></tr>
+      <tr><td>費用</td><td>採分級費率。規模超過 200 億時，經理費約 1.0%、保管費約 0.10%；費用高於被動 ETF，需靠主動超額報酬補回。</td></tr>
+      <tr><td>配息</td><td>季配息，除息月份為 3、6、9、12 月；近 12 個月殖利率資料約 1.58%，不應視為高股息商品。</td></tr>
+    </table>
+  </div>
+
+  <h2>持股基本面</h2>
+  <p>00981A 的基本面來自它持有的一籃子股票。2026-05-15 持股快照顯示共 51 檔，前十大約 60.9%，集中度高於一般寬基 ETF。</p>
+  <div class="table-wrap">
+    <table>
+      <tr><th>持股</th><th>權重</th><th>主要曝險</th></tr>
+      <tr><td>台積電</td><td>10.26%</td><td>半導體龍頭，接近主動 ETF 單一持股上限附近。</td></tr>
+      <tr><td>台光電</td><td>8.47%</td><td>高階 CCL、AI 伺服器材料。</td></tr>
+      <tr><td>智邦</td><td>6.07%</td><td>網通與資料中心交換器。</td></tr>
+      <tr><td>聯發科</td><td>5.40%</td><td>IC 設計與大型科技權重。</td></tr>
+      <tr><td>台達電</td><td>5.30%</td><td>電源、散熱、AI 伺服器與電動化。</td></tr>
+      <tr><td>旺矽</td><td>4.97%</td><td>半導體測試介面。</td></tr>
+      <tr><td>奇鋐</td><td>4.70%</td><td>散熱模組與 AI 伺服器供應鏈。</td></tr>
+      <tr><td>緯穎</td><td>4.56%</td><td>雲端與 AI 伺服器。</td></tr>
+      <tr><td>南電</td><td>3.87%</td><td>IC 載板，半導體供應鏈循環。</td></tr>
+      <tr><td>貿聯-KY</td><td>3.83%</td><td>高速傳輸、線束與連接元件。</td></tr>
+    </table>
+  </div>
+
+  <h2>集中度與風格</h2>
+  <p>這檔 ETF 的優勢是主題非常清楚：AI 供應鏈、半導體、伺服器、網通、散熱與高階材料。缺點也是同一件事：若 AI 硬體、半導體或高本益比科技股同步修正，ETF 的淨值會直接承壓，分散效果有限。</p>
+  <p>和 0050 相比，00981A 的台積電權重低得多，但把更多部位放在台積電以外的 AI 零組件供應鏈。這讓它有機會跑贏市值加權指數，也承擔更高的主動選股風險。</p>
+
+  <h2>交易、折溢價與流動性</h2>
+  <div class="table-wrap">
+    <table>
+      <tr><th>項目</th><th>數字</th><th>判讀</th></tr>
+      <tr><td>2026-05-18 市價 / 淨值</td><td>28.24 / 28.18</td><td>溢價約 0.21%，目前不算誇張。</td></tr>
+      <tr><td>2026-05-15 市價 / 淨值</td><td>28.42 / 28.34</td><td>溢價約 0.28%，近期大致貼近淨值。</td></tr>
+      <tr><td>成交量</td><td>5/18 資料源顯示約 29.99 萬張；5/15 約 45.41 萬張</td><td>流動性非常高，買賣方便；但高人氣也可能放大短線波動。</td></tr>
+      <tr><td>自今年高點回落</td><td>-5.77%</td><td>仍屬高位震盪，尚未出現深度修正。</td></tr>
+    </table>
+  </div>
+
+  <h2>績效與進場風險</h2>
+  <p>2026-05-18 資料顯示：一週 -4.88%、本月以來 -0.14%、一個月 +12.51%、三個月 +49.58%、六個月 +87.89%、今年以來 +67.00%。遠見整理的 2026-05-15 主動式 ETF 表也顯示，00981A 今年以來約 +68.07%，是台股主動 ETF 中非常強勢的標的。</p>
+  <p>這種報酬型態代表它不是穩健型配置，而是攻擊型科技成長配置。短線若 AI 供應鏈獲利了結，回檔速度可能很快；長線是否值得持有，取決於經理人能否持續透過主動換股維持超額報酬。</p>
+
+  <h2>適合與不適合</h2>
+  <div class="table-wrap">
+    <table>
+      <tr><th>適合</th><th>不適合</th></tr>
+      <tr><td>看好台股 AI 供應鏈與科技成長股。</td><td>想找低波動、高股息、防禦型 ETF。</td></tr>
+      <tr><td>願意承受高集中度與短線回檔。</td><td>不能接受單月或單週明顯波動。</td></tr>
+      <tr><td>已持有 0050，想增加主動科技衛星部位。</td><td>已重倉台積電、AI 伺服器與電子零組件，導致曝險過度重疊。</td></tr>
+    </table>
+  </div>
+
+  <h2>操作觀點</h2>
+  <section class="good">
+    <p>00981A 可定位為「台股科技成長衛星部位」，不是保守核心。若你已經有 0050 或其他大盤 ETF，00981A 可以用小比例提高主動科技曝險；若你沒有核心配置，先用 0050 類寬基 ETF 打底會更穩。</p>
+    <p>新進場建議分批，不建議在強勢高位一次買滿。已有持股者可續抱，但要設定再平衡條件，例如前十大持股過度集中、折溢價擴大、相對 0050 超額報酬連續轉弱，或 AI 供應鏈基本面降溫。</p>
+  </section>
+
+  <h2>主要風險</h2>
+  <ul>
+    <li>集中度風險：前十大約 60.9%，少數股票會大幅影響整體績效。</li>
+    <li>科技循環風險：AI 伺服器、半導體、散熱、PCB/CCL 若同時修正，淨值會快速回落。</li>
+    <li>主動管理風險：經理人選股與換股可能勝出，也可能落後 0050 或同類主動 ETF。</li>
+    <li>費用拖累：費用高於被動 ETF，需要持續超額報酬補回。</li>
+    <li>人氣交易風險：高成交、高討論度容易帶來追價與獲利了結震盪。</li>
+  </ul>
+
+  <h2>資料來源</h2>
+  <p class="source-list">
+    <a href="https://www.etfinfo.tw/etf/00981A/holdings">ETF資訊網持股快照</a>、
+    <a href="https://www.wantgoo.com/stock/etf/net-value">玩股網 ETF 淨值及折溢價</a>、
+    <a href="https://www.stockq.org/etf/00981A.php">StockQ 00981A 行情與報酬率</a>、
+    <a href="https://www.gvm.com.tw/article/130148">遠見主動式 ETF 統計</a>、
+    <a href="https://www.etfinfo.tw/blog/00981A-chen-chuan-yao">ETF資訊網 00981A 基金概況</a>。
+  </p>
+</main>
+</body>
+</html>
