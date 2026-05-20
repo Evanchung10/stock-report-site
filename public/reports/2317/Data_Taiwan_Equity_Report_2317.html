@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>鴻海 Data Taiwan Equity Report</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #172033; background: #fff; }
+    main { max-width: 1120px; margin: 0 auto; padding: 34px 22px 56px; }
+    header { border-bottom: 2px solid #12385b; padding-bottom: 18px; margin-bottom: 24px; }
+    h1 { font-family: Georgia, "Times New Roman", serif; font-size: 32px; margin: 0 0 8px; letter-spacing: 0; }
+    h2 { font-size: 22px; margin: 26px 0 6px; letter-spacing: 0; }
+    h3 { font-size: 16px; margin: 20px 0 6px; letter-spacing: 0; }
+    .zh { color: #64748b; font-size: .82em; font-weight: 600; margin-left: .35rem; }
+    .note { margin: 0 0 12px; color: #64748b; font-size: 13px; line-height: 1.55; }
+    .muted { color: #5d687a; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+    .metric { border: 1px solid #d9dee7; border-radius: 6px; padding: 12px; background: #f7f8fb; }
+    .metric-label { color: #5d687a; font-size: 12px; margin-bottom: 5px; }
+    .metric-value { color: #12385b; font-size: 22px; font-weight: 700; }
+    .metric-sub { color: #5d687a; font-size: 12px; margin-top: 3px; }
+    table { width: 100%; border-collapse: collapse; margin: 12px 0 18px; font-size: 13px; }
+    th, td { border-bottom: 1px solid #d9dee7; padding: 9px 8px; text-align: right; vertical-align: top; }
+    th:first-child, td:first-child { text-align: left; }
+    th { color: #12385b; background: #f2f5f8; font-weight: 700; }
+    .bar-row { display: grid; grid-template-columns: 170px 1fr 70px; gap: 10px; align-items: center; margin: 9px 0; font-size: 13px; }
+    .bar-track { height: 10px; background: #edf1f5; border-radius: 999px; overflow: hidden; }
+    .bar { height: 100%; background: #0f5e8c; border-radius: 999px; }
+    .bar.positive { background: #cf222e; }
+    .bar.negative { background: #1a7f37; }
+    .signal { font-weight: 700; white-space: nowrap; }
+    .signal.positive { color: #cf222e; }
+    .signal.negative { color: #1a7f37; }
+    .signal.neutral { color: #57606a; }
+    .chart-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 16px; margin: 12px 0 20px; }
+    .chart { border: 1px solid #d9dee7; border-radius: 6px; padding: 12px; background: #fff; }
+    .chart h4 { margin: 0 0 10px; color: #12385b; font-size: 14px; letter-spacing: 0; }
+    .chart-row { display: grid; grid-template-columns: 72px 1fr 92px; gap: 8px; align-items: center; margin: 8px 0; font-size: 12px; }
+    .chart-track { height: 10px; background: #edf1f5; border-radius: 999px; overflow: hidden; }
+    .chart-bar { height: 100%; border-radius: 999px; }
+    .chart-bar.positive { background: #cf222e; }
+    .chart-bar.negative { background: #1a7f37; }
+    .legend { display: flex; gap: 14px; flex-wrap: wrap; margin: 8px 0 14px; color: #57606a; font-size: 12px; }
+    .legend .red { color: #cf222e; font-weight: 700; }
+    .legend .green { color: #1a7f37; font-weight: 700; }
+    .two-col { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 18px; }
+    .callout { border-left: 3px solid #12385b; background: #f7f8fb; padding: 12px 14px; line-height: 1.7; }
+    .small { font-size: 12px; color: #5d687a; line-height: 1.6; }
+    .price-line { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 8px; margin: 12px 0 18px; }
+    .price-point { border: 1px solid #d9dee7; border-radius: 6px; padding: 9px; background: #fff; }
+    .price-point span { display: block; color: #5d687a; font-size: 11px; margin-bottom: 4px; }
+    .price-point strong { color: #12385b; font-size: 15px; }
+    @media (max-width: 760px) { .two-col { grid-template-columns: 1fr; } .bar-row { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Data Taiwan Equity Report<span class="zh">｜台股資料頁</span></h1>
+      <p class="muted">鴻海 (2317) · Generated 2026-05-20 21:57 · Folder: output/2317_TW</p>
+    </header>
+    <h2>Data Notes<span class="zh">｜資料註記</span></h2><p class="note">閱讀重點：確認資料來源、計算方式與限制，避免把估算值當成精確財報數字。</p>
+    <p class="callout">這一頁是資料入口與限制說明。基本面分析請看 Fundamental，股價趨勢請看 Technical。資料檔案保留在本機資料夾中，方便日後重新檢查或匯入試算表。</p>
+    <table><thead><tr><th>File</th><th>Path</th><th>Purpose</th></tr></thead><tbody><tr><td>Financial Metrics CSV</td><td>../analysis/financial_metrics_and_forecasts.csv</td><td>年度財務、營收、EBITDA、現金流彙整</td></tr><tr><td>Peer Comparison CSV</td><td>../analysis/peer_comparison.csv</td><td>同業營收成長、利潤率與估值比較</td></tr><tr><td>Price History CSV</td><td>../analysis/price_history.csv</td><td>FinMind/TWSE 股價日資料</td></tr><tr><td>Technical Summary CSV</td><td>../analysis/technical_summary.csv</td><td>均線、報酬率、52 週位置與觀察價格帶摘要</td></tr><tr><td>Market Index History CSV</td><td>../analysis/market_index_history.csv</td><td>加權指數即時資料彙整</td></tr><tr><td>Market Proxy Price History CSV</td><td>../analysis/market_proxy_price_history.csv</td><td>0050 市場代理日股價資料</td></tr><tr><td>Market Proxy Continuous Price History CSV</td><td>../analysis/market_proxy_continuous_price_history.csv</td><td>排除重大價格斷點後的 0050 趨勢資料</td></tr><tr><td>Market Institutional Flow CSV</td><td>../analysis/market_institutional_flow.csv</td><td>整體市場三大法人買賣</td></tr><tr><td>Stock Institutional Flow CSV</td><td>../analysis/stock_institutional_flow.csv</td><td>個股三大法人買賣</td></tr><tr><td>News CSV</td><td>../analysis/news.csv</td><td>個股新聞標題、來源與連結</td></tr><tr><td>Margin Purchase Short Sale CSV</td><td>../analysis/margin_purchase_short_sale.csv</td><td>融資融券資料</td></tr><tr><td>Shareholding CSV</td><td>../analysis/shareholding.csv</td><td>外資持股比例與股數</td></tr><tr><td>Data Source Summary JSON</td><td>../analysis/data_source_summary.json</td><td>資料來源、同業清單與限制說明</td></tr></tbody></table>
+    <h2>Source Summary<span class="zh">｜資料來源摘要</span></h2>
+    <p class="note">閱讀重點：確認每份資料從哪裡來，以及哪些數字是估算值。</p>
+    <ul>
+      <li>FinMind：財報、PER/PBR、月營收、法人買賣、歷史股價、大盤指數、新聞、融資融券、外資持股。</li>
+      <li>TWSE OpenAPI：最新日成交資訊與公司基本資料輔助。</li>
+      <li>大盤長期趨勢：使用 0050 元大台灣50作為市場代理，因加權指數即時資料不一定提供完整日歷史；若 0050 發生除權或分割，趨勢計算會使用最近一次價格斷點後的連續資料。</li>
+      <li>FMP：不作為台股主資料源，因為 2330.TW 財報與報價端點需要額外方案權限。</li>
+      <li>台股版 EV/EBITDA 為估算值，不是資料源直接提供的 enterprise value。</li>
+      <li>觀察價格帶以最新完整年度 EPS 與假設 PER 區間推估，僅供情境觀察，不是投資建議。</li>
+    </ul>
+  </main>
+</body>
+</html>
