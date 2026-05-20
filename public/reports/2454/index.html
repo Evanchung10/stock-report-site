@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2454 聯發科分析</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #17202a;
+      background: #f7f8fa;
+    }
+    main {
+      width: min(1080px, 100%);
+      margin: 0 auto;
+      padding: 32px 20px 56px;
+    }
+    header { margin-bottom: 22px; }
+    h1 { margin: 0 0 8px; font-size: 32px; line-height: 1.25; letter-spacing: 0; }
+    h2 { margin: 30px 0 12px; font-size: 22px; line-height: 1.35; }
+    p, li { line-height: 1.65; }
+    a { color: #175cd3; }
+    .muted { color: #667085; }
+    .tag {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: #e8f2ff;
+      color: #175cd3;
+      font-size: 13px;
+    }
+    .home-link { display: inline-block; margin-bottom: 12px; color: #175cd3; text-decoration: none; font-weight: 650; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin: 18px 0;
+    }
+    .metric, section {
+      background: #fff;
+      border: 1px solid #e4e7ec;
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .metric strong {
+      display: block;
+      margin-top: 6px;
+      font-size: 24px;
+      line-height: 1.25;
+      overflow-wrap: anywhere;
+    }
+    .warn { background: #fff7ed; border-color: #fed7aa; }
+    .good { background: #f0fdf4; border-color: #bbf7d0; }
+    .table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border-radius: 8px;
+    }
+    table {
+      width: 100%;
+      min-width: 660px;
+      border-collapse: collapse;
+      background: #fff;
+      border: 1px solid #e4e7ec;
+    }
+    th, td {
+      padding: 11px 12px;
+      border-bottom: 1px solid #e4e7ec;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #f2f4f7; font-weight: 650; }
+    tr:last-child td { border-bottom: 0; }
+    .source-list { overflow-wrap: anywhere; }
+    @media (max-width: 820px) {
+      .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 560px) {
+      main { padding: 20px 12px 40px; }
+      h1 { font-size: 26px; }
+      h2 { font-size: 20px; margin-top: 24px; }
+      p, li, th, td { font-size: 16px; }
+      .grid { grid-template-columns: 1fr; gap: 10px; }
+      .metric, section { padding: 14px; }
+      .metric strong { font-size: 22px; }
+      table { min-width: 620px; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <a class="home-link" href="../../">← 回到首頁</a>
+    <span class="tag">個股分析</span>
+    <h1>2454 聯發科</h1>
+    <p class="muted">分析日期：2026-05-20。重點放在 Q1 財報、手機晶片循環、AI ASIC 題材、估值與高波動風險。</p>
+  </header>
+
+  <div class="grid">
+    <div class="metric"><span>收盤價</span><strong>3,230</strong><span class="muted">2026-05-20</span></div>
+    <div class="metric"><span>本益比</span><strong>51.47x</strong><span class="muted">鉅亨網 5/20</span></div>
+    <div class="metric"><span>Q1 EPS</span><strong>15.17</strong><span class="muted">季增 0.78 元、年減 3.26 元</span></div>
+    <div class="metric"><span>Q2 財測營收</span><strong>1,402-1,492 億</strong><span class="muted">約持平至小幅下滑</span></div>
+  </div>
+
+  <section class="warn">
+    <h2>結論</h2>
+    <p>聯發科目前不是用傳統手機晶片循環在定價，而是被市場用「AI ASIC / 高階運算晶片選擇權」重新評價。問題是，Q1 財報本身並不算強：營收年減 2.7%、營業利益年減 23.8%、EPS 年減至 15.17 元；4 月營收也年減 4.1%。</p>
+    <p>也就是說，現在股價的主要支撐不是已落地的短期財報，而是未來 AI ASIC 與資料中心設計案的期待。這讓聯發科有高上行空間，但估值與波動也明顯偏高。以 5/20 收盤 3,230 元、本益比約 51.5 倍來看，這是高成長高風險定價，不是安全邊際充足的便宜股。</p>
+  </section>
+
+  <h2>最新財報</h2>
+  <div class="table-wrap">
+    <table>
+      <tr><th>項目</th><th>2026 Q1</th><th>判讀</th></tr>
+      <tr><td>營收</td><td>1,491.51 億元，季減 0.7%、年減 2.7%</td><td>手機與邊緣平台仍有循環壓力。</td></tr>
+      <tr><td>毛利率</td><td>46.3%</td><td>季增 0.2 個百分點，但年減 1.8 個百分點。</td></tr>
+      <tr><td>營業利益</td><td>228.91 億元，季增 4.8%、年減 23.8%</td><td>費用率高，營運槓桿尚未恢復到去年同期。</td></tr>
+      <tr><td>營業利益率</td><td>15.3%</td><td>季增 0.8 個百分點，但低於去年同期 19.6%。</td></tr>
+      <tr><td>歸母淨利</td><td>241.54 億元，季增 5.4%、年減 17.6%</td><td>短期獲利仍低於去年同期。</td></tr>
+      <tr><td>EPS</td><td>15.17 元</td><td>季增，但年減 3.26 元。</td></tr>
+    </table>
+  </div>
+
+  <h2>第二季展望</h2>
+  <p>公司給出的 2026 Q2 財測為營收 1,402-1,492 億元、毛利率 46% 正負 1.5 個百分點、營業費用率 31% 正負 2 個百分點。這代表 Q2 並沒有明顯立即爆發的營收財測，市場價格主要是在提前反映 AI ASIC 後續成長，而不是 Q2 既有手機晶片業務大幅反彈。</p>
+
+  <h2>月營收動能</h2>
+  <p>2026 年 4 月營收 467.37 億元，月減 26.1%、年減 4.1%；前 4 月累計營收 1,958.87 億元，年減 3.1%。這是目前基本面上最需要留意的弱點：若後續月營收無法重新轉正，股價很容易因為高估值而被修正。</p>
+
+  <h2>投資亮點</h2>
+  <ul>
+    <li>AI ASIC 選擇權：市場期待聯發科切入雲端客製化晶片設計，若案量與營收貢獻逐步明朗，評價有機會再提升。</li>
+    <li>手機晶片龍頭地位：高階與中高階 Android 平台仍是基本盤，若手機週期復甦可帶動營收改善。</li>
+    <li>產品組合多元：Mobile Phone、Smart Edge Platforms、Power IC 分散終端應用，不是單一手機晶片公司。</li>
+    <li>現金部位厚：Q1 現金及流動金融資產約 1,947.79 億元，財務體質仍強。</li>
+  </ul>
+
+  <h2>估值與股價位置</h2>
+  <div class="table-wrap">
+    <table>
+      <tr><th>項目</th><th>數字</th><th>解讀</th></tr>
+      <tr><td>2026-05-20 收盤</td><td>3,230 元</td><td>當日上漲 2.38%，但近幾日波動非常大。</td></tr>
+      <tr><td>近期高點</td><td>5/11 盤中最高 3,985 元</td><td>目前距該高點約 -18.9%，但仍遠高於 4 月底。</td></tr>
+      <tr><td>本益比</td><td>51.47 倍</td><td>遠高於傳統 IC 設計循環股評價，隱含 AI ASIC 高成長假設。</td></tr>
+      <tr><td>Q1 年化 EPS</td><td>約 60.68 元</td><td>以 3,230 元計算，年化本益比約 53 倍，和市場資料接近。</td></tr>
+      <tr><td>短線狀態</td><td>高檔急漲急跌</td><td>適合嚴格控管部位，不適合無停損追價。</td></tr>
+    </table>
+  </div>
+
+  <section class="warn">
+    <h2>主要風險</h2>
+    <ul>
+      <li>估值風險：目前 50 倍以上本益比需要 AI ASIC 題材持續被驗證，否則修正壓力大。</li>
+      <li>月營收尚未轉強：4 月營收年減，短期營運數字和股價期待存在落差。</li>
+      <li>AI ASIC 時程風險：設計案量產、客戶採用、毛利率與營收認列時程都可能不如市場預期。</li>
+      <li>手機晶片競爭：高通、蘋果自研、Android 品牌庫存週期都會影響主力業務。</li>
+      <li>高波動籌碼風險：5 月股價日波動極大，短線資金退潮時跌幅可能很快。</li>
+    </ul>
+  </section>
+
+  <h2>操作觀點</h2>
+  <p>若已持有，聯發科可以續抱但應把它視為高波動成長股，觀察後續月營收能否重新年增、AI ASIC 訂單是否更明確、以及 Q2 毛利率是否能守在財測中高段。</p>
+  <p>若要新進，3,230 元附近仍不是低風險位置。較合理的做法是分批，並把部位控制在可承受波動的範圍。若只是看好 AI ASIC 題材，應等營收或法說證據更明確；若只是短線交易，需設定停損，因為估值已不容許基本面失誤。</p>
+
+  <h2>資料來源</h2>
+  <p class="source-list">
+    <a href="https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q1/%5B%E6%B3%95%E8%AF%B4%E4%BC%9A%E8%B5%84%E6%96%99%5DQ1%E7%AE%80%E6%8A%A5%E8%B5%84%E6%96%99.pdf">聯發科 2026 Q1 官方法說簡報</a>、
+    <a href="https://technews.tw/2026/05/08/mtk-2454-202604-financial-report/">TechNews 4 月營收</a>、
+    <a href="https://www.cnyes.com/twstock/ps_historyprice.aspx?code=2454">鉅亨網 2454 歷史行情</a>、
+    <a href="https://tw.fiisual.com/blog/post/2026/mediatek-2026-q1-earnings-call-memo">Fiisual Q1 法說整理</a>。
+  </p>
+</main>
+</body>
+</html>

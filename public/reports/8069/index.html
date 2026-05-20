@@ -49,6 +49,13 @@
       font-size: 13px;
       white-space: nowrap;
     }
+    .home-link {
+      color: #58a6ff;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
     .tabs {
       max-width: 1280px;
       margin: 0 auto;
@@ -105,6 +112,7 @@
     }
     @media (max-width: 760px) {
       .title-row { display: block; }
+      .home-link { display: inline-block; margin-bottom: 6px; white-space: normal; }
       .subtitle { display: block; margin-top: 4px; white-space: normal; }
       .tab-button { min-width: 124px; padding-left: 10px; padding-right: 10px; }
       main { padding: 8px; }
@@ -116,7 +124,7 @@
   <header>
     <div class="title-row">
       <h1>元太 (8069) Taiwan Equity Report</h1>
-      <div class="subtitle">Tabbed Navigation ｜分頁導覽整合版</div>
+      <div class="subtitle"><a class="home-link" href="../../">← 回到首頁</a> ｜ Tabbed Navigation ｜分頁導覽整合版</div>
     </div>
     <nav class="tabs" role="tablist" aria-label="Taiwan equity report sections">
       <button class="tab-button active" role="tab" aria-selected="true" data-target="fundamental">Fundamental<span>基本面與估值</span></button>
