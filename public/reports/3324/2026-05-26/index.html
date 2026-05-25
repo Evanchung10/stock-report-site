@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3324 雙鴻 Taiwan Stock Report</title>
+  <style>
+    :root { --bg:#0d1117; --line:#d0d7de; --ink:#24292f; --active:#fd8c73; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; background:#f6f8fa; color:var(--ink); }
+    header { background:var(--bg); color:#f0f6fc; padding:16px 18px 0; position:sticky; top:0; z-index:20; }
+    .title-row { max-width:1280px; margin:0 auto 12px; display:flex; justify-content:space-between; gap:16px; align-items:baseline; }
+    h1 { margin:0; font-size:18px; letter-spacing:0; }
+    .subtitle,.tab-button span { color:#8b949e; font-size:13px; }
+    .home-link { color:#58a6ff; text-decoration:none; font-weight:700; }
+    .tabs { max-width:1280px; margin:0 auto; display:flex; gap:4px; overflow-x:auto; border-bottom:1px solid #30363d; }
+    .tab-button { appearance:none; border:0; border-bottom:2px solid transparent; background:transparent; color:#c9d1d9; padding:12px 14px 10px; min-width:138px; text-align:left; cursor:pointer; font-size:14px; font-weight:700; }
+    .tab-button span { display:block; margin-top:2px; font-size:11px; font-weight:500; }
+    .tab-button.active { color:#fff; border-bottom-color:var(--active); }
+    main { max-width:1280px; margin:0 auto; padding:14px 14px 24px; }
+    .tab-panel { display:none; background:#fff; border:1px solid var(--line); border-radius:8px; overflow:hidden; min-height:calc(100vh - 132px); }
+    .tab-panel.active { display:block; }
+    iframe { display:block; width:100%; height:calc(100vh - 134px); border:0; background:#fff; }
+    @media (max-width:760px) { .title-row { display:block; } .subtitle { display:block; margin-top:4px; } .tab-button { min-width:124px; } main { padding:8px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="title-row">
+      <h1>雙鴻 (3324) Taiwan Stock Report</h1>
+      <div class="subtitle"><a class="home-link" href="../../../">回到首頁</a> | Report date 2026-05-26 | Data through 2026-05-25</div>
+    </div>
+    <nav class="tabs" role="tablist" aria-label="Taiwan stock report sections">
+      <button class="tab-button active" role="tab" aria-selected="true" data-target="fundamental">Fundamental<span>基本面與估值</span></button>
+      <button class="tab-button" role="tab" aria-selected="false" data-target="technical">Technical<span>技術面與籌碼</span></button>
+      <button class="tab-button" role="tab" aria-selected="false" data-target="data">Data<span>資料來源與限制</span></button>
+    </nav>
+  </header>
+  <main>
+    <section class="tab-panel active" id="fundamental" role="tabpanel"><iframe src="Fundamental_Taiwan_Equity_Report_3324.html" title="Fundamental equity report"></iframe></section>
+    <section class="tab-panel" id="technical" role="tabpanel"><iframe src="Technical_Taiwan_Equity_Report_3324.html" title="Technical equity report"></iframe></section>
+    <section class="tab-panel" id="data" role="tabpanel"><iframe src="Data_Taiwan_Equity_Report_3324.html" title="Data report"></iframe></section>
+  </main>
+  <script>
+    const buttons = Array.from(document.querySelectorAll('.tab-button'));
+    const panels = Array.from(document.querySelectorAll('.tab-panel'));
+    function activate(target) {
+      buttons.forEach(button => {
+        const active = button.dataset.target === target;
+        button.classList.toggle('active', active);
+        button.setAttribute('aria-selected', String(active));
+      });
+      panels.forEach(panel => panel.classList.toggle('active', panel.id === target));
+      history.replaceState(null, '', '#' + target);
+    }
+    buttons.forEach(button => button.addEventListener('click', () => activate(button.dataset.target)));
+    const initial = location.hash.replace('#', '');
+    if (initial && panels.some(panel => panel.id === initial)) activate(initial);
+  </script>
+</body>
+</html>
