@@ -1,0 +1,27 @@
+{
+  "ticker": "0050",
+  "name": "元大台灣50",
+  "report_date": "2026-05-25",
+  "report_type": "Taiwan ETF long-term holding analysis",
+  "status": "核心部位，分批進場",
+  "suggested_allocation": "既有定期定額維持；額外閒置資金先投入30%-40%，保留60%-70%等回測、盤整或時間分散。",
+  "reference_price": 100.75,
+  "reference_nav": 100.71,
+  "premium_discount": "0.04%",
+  "main_risks": [
+    "估值偏高",
+    "台積電權重接近六成",
+    "半導體產業權重超過七成",
+    "短線漲幅已大",
+    "拆股前後價格序列需調整"
+  ],
+  "next_review_date": "2026-06-25",
+  "published_url": "https://reports.talentostudio.com/reports/0050/",
+  "sources": [
+    "https://www.stockq.org/etf/0050.php",
+    "https://www.yuantaetf.com/product/detail/0050/",
+    "https://www.yuantaetf.com/product/detail/0050/ratio",
+    "https://www.etfinfo.tw/etf/0050",
+    "https://www.etfinfo.tw/etf/0050/holdings"
+  ]
+}
