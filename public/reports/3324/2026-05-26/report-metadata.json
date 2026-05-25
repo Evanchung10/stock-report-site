@@ -1,0 +1,29 @@
+{
+  "ticker": "3324",
+  "name": "雙鴻",
+  "report_date": "2026-05-26",
+  "data_as_of": "2026-05-25",
+  "report_type": "Taiwan Stock AI thermal risk check",
+  "status": "觀察，等待籌碼與技術面修復",
+  "suggested_allocation": "未持有者先列觀察；已持有者以990-1000元區間、法人賣壓與5月營收作為風險檢查條件。",
+  "reference_price": 1010,
+  "valuation_note": "PER 29.15x, PBR 7.0x. 高成長估值仍在，但短線籌碼與技術面偏弱。",
+  "main_risks": [
+    "高估值對營收與毛利率放緩敏感",
+    "NVIDIA Rubin散熱設計變更造成族群估值重估",
+    "近20日法人合計賣超約8495張",
+    "股價低於20日線與60日線，接近120日線觀察區",
+    "4月營收月減14.6%，需等待5月營收確認"
+  ],
+  "next_review_date": "2026-06-10",
+  "public_url": "https://reports.talentostudio.com/reports/3324/2026-05-26/",
+  "local_html_path": "/Users/evanchung/Documents/codex_stock analysis/docs/3324/2026-05-26/index.html",
+  "sources": [
+    "https://api.finmindtrade.com/docs",
+    "https://www.cna.com.tw/news/aie/202605060333.aspx",
+    "https://technews.tw/2026/05/06/auras-3324-202604-financial-report/",
+    "https://finance.technews.tw/2026/05/06/ai-server-jentech/",
+    "https://news.cnyes.com/news/print/6445586",
+    "https://tw.stock.yahoo.com/quote/3324.TWO/profile"
+  ]
+}
